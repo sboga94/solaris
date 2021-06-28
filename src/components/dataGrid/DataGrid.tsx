@@ -12,6 +12,7 @@ export const DataGridWrapper = (props: IDataGridProps) => {
   return (
     <div className="dataGridWrapper">
       <div>
+        <span>Filtered Date:</span>
         <DateField defaultValue={new Date(props.defaultDateValue)} onChangeFunc={props.dateOnChange} />
       </div>
       <div style={{ height: 400, width: '85%' }}>
