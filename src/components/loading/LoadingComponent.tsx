@@ -1,11 +1,11 @@
-import './App.css';
-
+import '../../layout/theme/scss/App.css';
+import React, { Component }  from 'react';
 export type LoadingComponentPropType= {
   svgSrc:any
   svgDescription?:any;
 }
 
- function LoadingComponent(props:LoadingComponentPropType) {
+ const LoadingComponent = (props:LoadingComponentPropType) => {
   return (
     <div className="loading">
       <header className="loading-header">
