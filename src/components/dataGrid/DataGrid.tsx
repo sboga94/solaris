@@ -11,7 +11,7 @@ export const DataGridWrapper = (props: IDataGridProps) => {
   const [selectionModel, setSelectionModel] = React.useState<GridRowId[]>([]);
   return (
     <div className="dataGridWrapper">
-      <div>
+      <div className="dateFieldWrapper">
         <DateField defaultValue={new Date(props.defaultDateValue)} onChangeFunc={props.dateOnChange} />
       </div>
       <div style={{ height: 400, width: '85%' }}>
